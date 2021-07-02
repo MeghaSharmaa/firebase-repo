@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.top-heading{
+    background-color: #010101;
+    height: 4rem;
+}
+
+.header-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.header-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4rem;
+}
+
+.header-list li a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+.first-section{
+    background-color: #010101;
+    height: 50rem;
+    justify-content: center;
+}
+
+#about-game{
+    height: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+.start-btn{
+    justify-content: center;
+    display: flex;
+}
+
+.start-btn button a{
+    text-decoration: none;
+    color: azure;
+}
+
+.avatar-text{
+    padding-top: 6rem;
+    color:aquamarine;
+    justify-content: center;
+    
+}
+.avatar{
+margin-left: 21rem;
+}
+.avatar img{
+    border-radius: 100px;
+    height: 105px;
+    width: 105px;
+    margin-top: 130px;
+    margin-right: 2rem;
+    justify-content: center;
+}
+
+.second-section{
+    background-color: #010101;
+    height: 30rem;
+    position: relative;
+}
+
+#rules{
+    position: absolute;
+    background-color: #080808c5;
+    height: 80%;
+    width:  90%;
+    margin: 4% 5% ;
+    bottom: 0;
+}
+
+.carousel-heading{
+    text-align: center;
+    padding: 4%;
+    color: aqua;
+}
+
+.carousel-item{
+    height: 25rem;
+}
+
+.carousel-text{
+    line-height: 1.5rem;
+    font-size: large;
+    text-align: justify;
+    margin: 15px 150px;
+    font-family: 'Inter', sans-serif;
+    color: aquamarine;
+}
+
+
+#footer{
+    background-color: #39A6A3;
+    height: 6rem;
+    /* bottom: 0; */
+    width: 100%;
+    position: relative;
+}
+
+.btop a{
+    float: right;
+    font-size: 18px;
+    padding-right:30px;
+    padding-top:35px;
+    text-decoration: none;
+    color:  rgb(8, 8, 8);
+
+}
+
+.btop a:hover{
+    color: #d2f6ff;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    list-style-type: none;
+    padding-top:10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.social li a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: auto;
+    color: rgb(10, 10, 10);
+} 
+
+.social li a:hover{
+    color: #d2f6ff;
+    text-decoration: none;
+}
+
+header{
+    height: 5rem;
+    color: #33c6eb;
+}
