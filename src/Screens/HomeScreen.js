@@ -14,6 +14,7 @@ import hamilton from '../assets/images/carousel/hamilton.png';
 import rses from '../assets/images/carousel/rses.png';
 import ucla from '../assets/images/carousel/ucla.png';
 import avatarBackground1 from '../assets/images/avatarBackground1.jpeg';
+import logo from '../assets/images/logo.png';
 
 const useStyles = makeStyles({
     customisedAvatar: {
@@ -21,7 +22,9 @@ const useStyles = makeStyles({
         marginTop: 80,
     },
     header: {
-        height: 60, width: window.innerWidth, position: 'fixed',
+        height: 60, 
+        width: window.innerWidth, 
+        position: 'fixed',
         display: 'flex',
         alignItems: 'center',
         backgroundColor: '#fff',
@@ -29,10 +32,11 @@ const useStyles = makeStyles({
         borderBottom: '1px solid rgba(0,0,0,.07)',
         justifyContent: 'space-between',
         top: 0,
+        left:0
     },
     quizContainer: {
         display: 'flex',
-        width: window.innerWidth,
+        maxWidth: window.innerWidth,
         //marginTop: 1000
         height: 580
     },
@@ -71,8 +75,11 @@ const HomeScreen = () => {
         return (
             <div className={classes.header}>
                 <div style={{marginLeft: 12}}>
-                    <Typography style={{fontSize: 24, fontWeight: 600, color: '#3f4652'}}>
-                       Behavioural analysis using gamification
+                    <Typography style={{fontSize: 24, fontWeight: 600, color: '#3f4652', flexDirection:"row-reverse"}}>
+                      <div style={{marginLeft: 25, marginTop: 5}}>
+                      <img src={logo}/>
+                      
+                      </div> 
                     </Typography>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'row', marginRight: 12}}>
@@ -85,17 +92,20 @@ const HomeScreen = () => {
     return (
         <div>
             <Header/>
-            <div style={{paddingTop: 200}}>
-                <Typography style={{fontSize: 50}} align={"center"}>
-                  <h3> Behavioural Analysis</h3>
+            <div style={{paddingTop: 230}}>
+                <Typography style={{fontSize: 50, fontFamily:'Merriweather', fontWeight: 500}} align={"center"}>
+                   Psychiz: Psychological Quiz  | Get to know yourself
                 </Typography>
-                <Typography style={{marginTop: 40, fontSize: 50, fontFace: 'Cantarell'}} align={"center"} >
-               <em> "The most important thing is to look ahead. <br/> The past is your anchor."</em>
+                <Typography style={{marginTop: 30, fontSize: 50, fontFamily:'Merriweather',}} align={"center"}>
+                    
+                </Typography>
+                <Typography style={{marginTop: 70, fontSize: 35, fontFace: 'Cantarell'}} align={"center"} >
+                <i>"The most important thing is to look ahead. <br/> The past is your anchor."</i>
                 </Typography>
             </div>
 
-            <div style={{height: 550, width: 1000, marginTop: 220, marginLeft: 200}}>
-                <Carousel autoPlay={true} showThumbs={false} showStatus={false}>
+            <div style={{height: 550, width: 1000,margin:"auto", justifyContent: "center", marginTop: 300,}}>
+                <Carousel autoPlay={true} showThumbs={false} showStatus={false} infiniteLoop={true} transitionTime={400} useKeyboardArrows={true}>
                     <div>
                         <img src={disclaimer}/>
                     </div>

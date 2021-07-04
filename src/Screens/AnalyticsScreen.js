@@ -46,6 +46,7 @@ console.log(quizType);
     const percentage =Math.round((res/(storage.length*4))*100); // percentage variable
     console.log(percentage);
 
+    //passing data to firebase database
     const createDB = () => {
         
         const userRef = firebase.database().ref("userInfo");
@@ -100,11 +101,16 @@ console.log(quizType);
 
             </div>
            
-            <div style={{height: 100, width: 400, backgroundColor: 'white', marginTop: 60,}}>
-            {percentage >= 0 && percentage <= 25 ? "low" :
-                 (percentage >= 26 && percentage <= 75 ? "mild" :
-                  "high")}
-                  {quizType === "1" ? "ABC": (quizType === "2" ? "XYZ" : "PQR" )}
+            <div style={{
+                height: 30, width: 150, 
+                backgroundColor: "rgb(118,206,250)", 
+                marginTop: 60, 
+                textAlign: "center",
+                paddingTop: 10}}>
+            {percentage >= 0 && percentage <= 25 ? "Low" :
+                 (percentage >= 26 && percentage <= 75 ? "Mild" :
+                  "High")}
+                  {quizType === "1" ? " Self Esteem": (quizType === "2" ? " Anxiety" : " Loneliness" )}
             </div>
 
             <Button variant="contained" color="primary" className={classes.homeButton} >
